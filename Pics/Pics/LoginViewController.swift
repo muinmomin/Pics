@@ -25,6 +25,13 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if PFUser.currentUser() != nil {
+            performSegueWithIdentifier("loginSegue", sender: nil)
+        }
+    }
+    
     @IBAction func onSignIn() {
         PFUser.logInWithUsernameInBackground(usernameTextField.text!, password: passwordTextField.text!) { (user: PFUser?, error: NSError?) -> Void in
             if user != nil {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F4472F024ABCBF437B5A396 /* Pods_Pics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52C227DBB616A7B675C6E0 /* Pods_Pics.framework */; };
+		2800D84F1C84C2540010BCC5 /* UserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800D84E1C84C2540010BCC5 /* UserMedia.swift */; };
+		2800D8511C84C3E90010BCC5 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800D8501C84C3E90010BCC5 /* PostImageViewController.swift */; };
 		2847537D1C835142007F9D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847537C1C835142007F9D92 /* AppDelegate.swift */; };
 		2847537F1C835142007F9D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847537E1C835142007F9D92 /* ViewController.swift */; };
 		284753821C835142007F9D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284753801C835142007F9D92 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		284753921C835142007F9D92 /* PicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284753911C835142007F9D92 /* PicsTests.swift */; };
 		2847539D1C835142007F9D92 /* PicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847539C1C835142007F9D92 /* PicsUITests.swift */; };
 		284753AB1C8369B7007F9D92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284753AA1C8369B7007F9D92 /* LoginViewController.swift */; };
+		286050A71C8527D600F98D6B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286050A61C8527D600F98D6B /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2800D84E1C84C2540010BCC5 /* UserMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedia.swift; sourceTree = "<group>"; };
+		2800D8501C84C3E90010BCC5 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 		284753791C835142007F9D92 /* Pics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2847537C1C835142007F9D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2847537E1C835142007F9D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		2847539C1C835142007F9D92 /* PicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsUITests.swift; sourceTree = "<group>"; };
 		2847539E1C835142007F9D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		284753AA1C8369B7007F9D92 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		286050A61C8527D600F98D6B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		A298E4027B344556CB63F236 /* Pods-Pics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pics/Pods-Pics.debug.xcconfig"; sourceTree = "<group>"; };
 		D7987ACC49F29DBA43F1F4FF /* Pods-Pics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pics/Pods-Pics.release.xcconfig"; sourceTree = "<group>"; };
 		EA52C227DBB616A7B675C6E0 /* Pods_Pics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +96,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2800D84D1C84C2320010BCC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2800D84E1C84C2540010BCC5 /* UserMedia.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2800D8521C84C9F40010BCC5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				284753AA1C8369B7007F9D92 /* LoginViewController.swift */,
+				2800D8501C84C3E90010BCC5 /* PostImageViewController.swift */,
+				2847537E1C835142007F9D92 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		284753701C835142007F9D92 = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +139,14 @@
 		2847537B1C835142007F9D92 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
+				2800D8521C84C9F40010BCC5 /* ViewControllers */,
+				2800D84D1C84C2320010BCC5 /* Models */,
 				2847537C1C835142007F9D92 /* AppDelegate.swift */,
-				2847537E1C835142007F9D92 /* ViewController.swift */,
 				284753801C835142007F9D92 /* Main.storyboard */,
 				284753831C835142007F9D92 /* Assets.xcassets */,
 				284753851C835142007F9D92 /* LaunchScreen.storyboard */,
 				284753881C835142007F9D92 /* Info.plist */,
-				284753AA1C8369B7007F9D92 /* LoginViewController.swift */,
+				286050A61C8527D600F98D6B /* PostCell.swift */,
 			);
 			path = Pics;
 			sourceTree = "<group>";
@@ -337,9 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2800D8511C84C3E90010BCC5 /* PostImageViewController.swift in Sources */,
 				284753AB1C8369B7007F9D92 /* LoginViewController.swift in Sources */,
+				2800D84F1C84C2540010BCC5 /* UserMedia.swift in Sources */,
 				2847537F1C835142007F9D92 /* ViewController.swift in Sources */,
 				2847537D1C835142007F9D92 /* AppDelegate.swift in Sources */,
+				286050A71C8527D600F98D6B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
